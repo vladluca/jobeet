@@ -1,0 +1,24 @@
+ibw_job_index:
+    path:     /
+    defaults: { _controller: "IbwJobeetBundle:Job:index" }
+    methods:  GET
+
+ibw_job_show:
+    path:     /{id}/show
+    defaults: { _controller: "IbwJobeetBundle:Job:show" }
+    methods:  GET
+
+ibw_job_new:
+    path:     /new
+    defaults: { _controller: "IbwJobeetBundle:Job:new" }
+    methods:  [GET, POST]
+
+ibw_job_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "IbwJobeetBundle:Job:edit" }
+    methods:  [GET, POST]
+
+ibw_job_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "IbwJobeetBundle:Job:delete" }
+    methods:  DELETE
